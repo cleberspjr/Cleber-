@@ -1,0 +1,24 @@
+{
+    "version": 1,
+    "author": "Uri Shaked",
+    "editor": "wokwi",
+    "parts": [
+      {
+        "type": "wokwi-pi-pico",
+        "id": "pico",
+        "top": 77.5,
+        "left": -30.75,
+        "rotate": 90,
+        "attrs": { "builder": "pico-sdk" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led2",
+        "top": -61.2,
+        "left": -63.4,
+        "attrs": { "color": "yellow" }
+      }
+    ],
+    "connections": [ [ "led2:C", "pico:GP12", "green", [ "v0" ] ], [ "led2:A", "pico:GP11", "red", [ "v0" ] ] ],
+    "dependencies": {}
+  }
